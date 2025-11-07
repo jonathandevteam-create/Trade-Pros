@@ -6,6 +6,7 @@ const images = {
   // contstructionHatImage: "/assets/images/rest/construction-hat.png",
   contstructionHatImage: "/assets/images/rest/estimate.webp",
   craftmanImage: "/assets/images/rest/craftman.png",
+  chiselImage: "/assets/images/icons/chisel.webp",
 };
 
 const localData = {

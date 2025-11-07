@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
-const { contstructionHatImage, craftmanImage } = localData.images;
+const { craftmanImage, chiselImage } = localData.images;
 const { screwDriverIcon, woodChiselIcon, manStandingIcon, repairManIcon } = localData.svgs;
 
 const Template = () => {
@@ -43,18 +43,19 @@ const HeroSection = () => {
   const { sendEmail } = useGlobalContext();
 
   return (
-    <section className="hero sm:min-h-[100vh] pt-[100px]! flex bg-[rgb(51,51,51)] relative" id='hero'>
+    <section className="hero sm:min-h-[100vh] pt-[100px]! flex bg-[rgb(51,51,51)] relative" id="hero">
       <div className="container  flex-1 flex items-center justify-center relative">
         <FrameQuadrates />
         <div className="hero-wrapper lg:flex lg:justify-between lg:items-center w-full relative z-10">
           <div className="hero-content max-w-[400px] mb-8 lg:mb-0">
             <h1 className="text-6xl text-primary">Trade Pros</h1>
             <p className="hero-description text-white text-sm font-light mb-8">
-             True Trade Pros connects home owners with verified, detail-oriented professionals who bring craftsmanship back to home renovation and remodel projects. 
+              True Trade Pros connects home owners with verified, detail-oriented professionals who bring craftsmanship back to
+              home renovation and remodel projects.
             </p>
-            <div className="[&>svg]:w-[150px] [&>svg]:h-[150px] [&>svg]:fill-current text-[#111]"> 
-
-            {repairManIcon}
+            <div className="[&>svg]:w-[150px] [&>svg]:h-[150px] [&>svg]:fill-current text-primary">
+              <img className="max-w-[150px]" src={chiselImage} alt="" />
+              {/* {woodChiselIcon} */}
             </div>
             {/* <Image width="4825" height="3225" src={contstructionHatImage} alt="" className=" mr-10 max-w-[200px] object-cover" /> */}
           </div>
@@ -170,7 +171,7 @@ const ServicesSection = () => {
         <div className="card-group  flex flex-wrap justify-center gap-[50px]">
           <div className="card services-card sm:w-[calc(100%/2-50px/2)] lg:w-[calc(100%/3-(50px*2)/3)] rounded-[15px]">
             <div className="card-image w-[100px] h-[100px] object-contain border-2 border-primary mx-auto mb-5 [&>svg]:h-15 [&>svg]:fill-current text-primary flex items-center justify-center">
-              {woodChiselIcon}
+              {repairManIcon}
             </div>
             <h4 className="card-title text-center text-lg text-primary uppercase font-semibold! mb-2">Detailed Craftsmanship</h4>
             <p className="card-description text-center text-gray-600 text-[0.9rem] font-light leading-[1.6]">
@@ -215,7 +216,7 @@ const HowWeWorkSection = () => {
       <div className="container relative text-white">
         <div className="max-w-[500px] lg:ml-auto  pl-5 lg:border-l border-primary relative">
           {/* <hr className="w-[2px] h-full bg-gradient-to-b from-primary to-transparent border-0 absolute left-0" /> */}
-          
+
           <h2 className="about-title text-3xl font-bold mb-3 text-white/90">How We Work with Trade Pros</h2>
           <p className="about-description  text-sm font-light max-w-[400px] text-neutral-400">
             At True Trade Pros, we’re more than just a lead generator — we’re your contracted back office, helping skilled
@@ -271,7 +272,9 @@ const ReviewSection = () => {
             craftsmanship, and that’s rare.”
           </p>
 
-          <div className="absolute bg-[rgb(51,51,51)] bottom-0 translate-y-[50%] translate-x-[-50%] left-[50%] px-3 text-white text-xs font-medium tracking-wide font-baskervville">Dario Di Stefano</div>
+          <div className="absolute bg-[rgb(51,51,51)] bottom-0 translate-y-[50%] translate-x-[-50%] left-[50%] px-3 text-white text-xs font-medium tracking-wide font-baskervville">
+            Dario Di Stefano
+          </div>
         </div>
       </div>
     </section>
