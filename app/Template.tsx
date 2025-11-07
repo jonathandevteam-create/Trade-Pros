@@ -53,9 +53,9 @@ const HeroSection = () => {
               True Trade Pros connects home owners with verified, detail-oriented professionals who bring craftsmanship back to
               home renovation and remodel projects.
             </p>
-            <div className="[&>svg]:w-[150px] [&>svg]:h-[150px] [&>svg]:fill-current text-primary">
-              <img className="max-w-[150px]" src={chiselImage} alt="" />
-              {/* {woodChiselIcon} */}
+            <div className="[&>svg]:w-[150px] [&>svg]:h-[150px] [&>svg]:fill-[rgb(117,87,21)] text-primary">
+              {/* <img className="max-w-[150px]" src={chiselImage} alt="" /> */}
+              {woodChiselIcon}
             </div>
             {/* <Image width="4825" height="3225" src={contstructionHatImage} alt="" className=" mr-10 max-w-[200px] object-cover" /> */}
           </div>

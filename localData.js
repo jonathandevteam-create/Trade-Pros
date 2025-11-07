@@ -127,7 +127,7 @@ const localData = {
       </svg>
     ),
     woodChiselIcon: (
-      <svg fill="#000000" version="1.1" id="Capa_1" width="800px" height="800px" viewBox="0 0 352.623 352.623">
+      <svg  version="1.1" id="Capa_1" width="800px" height="800px" viewBox="0 0 352.623 352.623">
         <g>
           <path
             d="M196.654,201.173l17.61-6.677l17.654-8.593l60.453-52.75l49.721-39.921l10.53-22.378L321.054,36.32h-24.432l-49.051,51.235
