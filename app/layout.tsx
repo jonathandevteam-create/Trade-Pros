@@ -33,9 +33,9 @@ export const metadata: Metadata = {
   // authors: [{ name: "Karen A.", url: "https://www.linkedin.com/in/karen86/" }],
   icons: {
     icon: [
-      { rel: "icon", url: "/assets/images/favicon/favicon.png" },
+      { rel: "icon", url: "/assets/images/favicon/favicon.webp" },
     ],
-    apple: "/assets/images/favicon/favicon.png", // 180x180 recommended
+    apple: "/assets/images/favicon/favicon.webp", // 180x180 recommended
   },
   openGraph: {
     title: "We Find Jobs For Trade Pros",

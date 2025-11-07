@@ -10,7 +10,7 @@ import Image from "next/image";
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 const { contstructionHatImage, craftmanImage } = localData.images;
-const { screwDriverIcon, woodChiselIcon, manStandingIcon } = localData.svgs;
+const { screwDriverIcon, woodChiselIcon, manStandingIcon, repairManIcon } = localData.svgs;
 
 const Template = () => {
   return (
@@ -52,7 +52,11 @@ const HeroSection = () => {
             <p className="hero-description text-white text-sm font-light mb-8">
              True Trade Pros connects home owners with verified, detail-oriented professionals who bring craftsmanship back to home renovation and remodel projects. 
             </p>
-            <Image width="4825" height="3225" src={contstructionHatImage} alt="" className=" mr-10 max-w-[200px] object-cover" />
+            <div className="[&>svg]:w-[150px] [&>svg]:h-[150px] [&>svg]:fill-current text-[#111]"> 
+
+            {repairManIcon}
+            </div>
+            {/* <Image width="4825" height="3225" src={contstructionHatImage} alt="" className=" mr-10 max-w-[200px] object-cover" /> */}
           </div>
           <div className="col  w-full lg:max-w-[500px]">
             <h2 className="text-white/40 mb-4 text-2xl font-semibold! font-poppins!">Get in touch!</h2>
