@@ -194,7 +194,7 @@ const ServicesSection = () => {
             </h4>
             <p className="card-description text-center text-gray-600 text-[0.9rem] font-light leading-[1.6]">
               We’re a platform for skilled tradespeople and homeowners who care about the details. Whether you're restoring a
-              historic home or upgrading a modern space, we help you find a good professionals  who treat every project with care and
+              historic home or upgrading a modern space, we help you find professionals  who treat every project with care and
               precision.
             </p>
           </div>
