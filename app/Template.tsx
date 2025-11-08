@@ -151,7 +151,7 @@ const HeroSection = () => {
                 callback={(e) => handleOnChange(e)}
               />
 
-              <input type="text" name="image" defaultValue={`${siteUrl}/assets/images/logo.png`} className="hidden" />
+              <input type="text" name="image" defaultValue={`${siteUrl}/assets/images/logo.webp`} className="hidden" />
               <input type="text" name="CONTENT" className="hidden" />
               <input type="text" name="to_email" defaultValue="wjonpost@gmail.com" className="hidden" />
               <ButtonDemo
