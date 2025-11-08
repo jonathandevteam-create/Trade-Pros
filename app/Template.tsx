@@ -249,7 +249,7 @@ const HowWeWorkSection = () => {
               <span className="text-primary text-2xl">•</span>
               <p>
                 <strong className="font-semibold">Communication Support:</strong> We assist with messaging and updates, but all
-                work agreements are made directly between homeowner and pro workers.
+                work agreements are made directly between homeowner and pro.
               </p>
             </li>
             <li className="text-sm font-light flex items-center gap-3 mb-4 text-white/80">
