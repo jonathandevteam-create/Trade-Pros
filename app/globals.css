@@ -150,9 +150,14 @@ html {
   /* @include mq(1920px) {} */
   scroll-behavior: smooth;
 
+  /* FULL HD 21px */
+  @media (min-width: 1920px) {
+    font-size: 21px;
+  }
+
   /* 2k 21.33px */
   @media (min-width: 2560px) {
-    font-size: calc(16 * 100px / (1920 * 100 / 2560));
+    font-size: calc(18 * 100px / (1920 * 100 / 2560));
   }
 
   /* 4k 32px */
