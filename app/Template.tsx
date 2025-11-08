@@ -207,7 +207,7 @@ const ServicesSection = () => {
               Crafted Spaces, Artisan Hands
             </h4>
             <p className="card-description text-center text-gray-600 text-[0.9rem] font-light leading-[1.6]">
-              Whether you're restoring a historic home or upgrading a old space, our platform helps connect you with
+              Whether you're restoring a historic home or upgrading a modern space, our platform helps connect you with
               independent trade pros who treat every project like a work of art. True Trade Pros was born from a desire to
               reconnect homeowners with craftspeople who value precision, pride, and timeless technique.
             </p>
