@@ -48,10 +48,13 @@ const HeroSection = () => {
         <FrameQuadrates />
         <div className="hero-wrapper lg:flex lg:justify-between lg:items-center w-full relative z-10">
           <div className="hero-content max-w-[400px] mb-8 lg:mb-0">
-            <h1 className="text-6xl text-primary">Trade Pros</h1>
+            <h1 className="text-6xl text-primary">True Trade Pros</h1>
             <p className="hero-description text-white text-sm font-light mb-8">
-              True Trade Pros connects home owners with verified, detail-oriented professionals who bring craftsmanship back to
-              home renovation and remodel projects.
+              <strong className="font-semibold">True Trade Pros</strong>{" "}
+              <span className="text-white/90">
+                connects homeowners with independent, detail-oriented professionals who bring craftsmanship back to home
+                renovation and remodel projects.
+              </span>
             </p>
             <div className="[&>svg]:w-[150px] [&>svg]:h-[150px] [&>svg]:fill-[rgb(117,87,21)] text-primary">
               {/* <img className="max-w-[150px]" src={chiselImage} alt="" /> */}
@@ -173,10 +176,12 @@ const ServicesSection = () => {
             <div className="card-image w-[100px] h-[100px] object-contain border-2 border-primary mx-auto mb-5 [&>svg]:h-15 [&>svg]:fill-current text-primary flex items-center justify-center">
               {repairManIcon}
             </div>
-            <h4 className="card-title text-center text-lg text-primary uppercase font-semibold! mb-2">Detailed Craftsmanship</h4>
+            <h4 className="card-title text-center text-lg text-primary uppercase font-semibold! mb-2">
+              Craftsmanship, Connected
+            </h4>
             <p className="card-description text-center text-gray-600 text-[0.9rem] font-light leading-[1.6]">
-              True Trade Pros connects homeowners with verified, detail-oriented professionals who bring craftsmanship back to
-              home renovation and remodel projects.
+              We connect homeowners with independent trade professionals who take pride in their work. Every pro in our network is
+              committed to quality, but each operates independently — we simply help make the match.
             </p>
           </div>
 
@@ -184,10 +189,13 @@ const ServicesSection = () => {
             <div className="card-image w-[100px] h-[100px] object-contain border-2 border-primary mx-auto mb-5 [&>svg]:h-15 [&>svg]:fill-current text-primary flex items-center justify-center">
               {manStandingIcon}
             </div>
-            <h4 className="card-title text-center text-lg text-primary uppercase font-semibold! mb-2">Artisan Minded Network</h4>
+            <h4 className="card-title text-center text-lg text-primary uppercase font-semibold! mb-2">
+              A Network Built for Artisans
+            </h4>
             <p className="card-description text-center text-gray-600 text-[0.9rem] font-light leading-[1.6]">
-              We’re a craftsman’s network — built for those who care about the details. Whether you're a homeowner seeking quality
-              trade pro, we’re here to make the connection.
+              We’re a platform for skilled tradespeople and homeowners who care about the details. Whether you're restoring a
+              historic home or upgrading a modern space, we help you find professionals who treat every project with care and
+              precision.
             </p>
           </div>
 
@@ -195,11 +203,13 @@ const ServicesSection = () => {
             <div className="card-image w-[100px] h-[100px] object-contain border-2 border-primary mx-auto mb-5 [&>svg]:h-15 [&>svg]:fill-current text-primary flex items-center justify-center">
               {screwDriverIcon}
             </div>
-            <h4 className="card-title text-center text-lg text-primary uppercase font-semibold! mb-2">Renovation Art Form</h4>
+            <h4 className="card-title text-center text-lg text-primary uppercase font-semibold! mb-2">
+              Crafted Spaces, Artisan Hands
+            </h4>
             <p className="card-description text-center text-gray-600 text-[0.9rem] font-light leading-[1.6]">
-              Whether you're restoring a historic home or upgrading a modern space, we match you with trade pros who treat every
-              project like a work of art. Our platform was born from a desire to reconnect homeowners with tradespeople who value
-              precision, pride, and timeless technique.
+              Whether you're restoring a historic home or upgrading a modern space, our platform helps connect you with
+              independent trade pros who treat every project like a work of art. True Trade Pros was born from a desire to
+              reconnect homeowners with craftspeople who value precision, pride, and timeless technique.
             </p>
           </div>
         </div>
@@ -210,49 +220,58 @@ const ServicesSection = () => {
 
 const HowWeWorkSection = () => {
   return (
-    <section className="how-we-work relative min-h-[100vh]" id="process">
+    <section className="how-we-work relative min-h-[100vh] pb-4!" id="process">
       <Image width="4825" height="3225" src={craftmanImage} alt="" className="absolute w-full h-full object-cover top-0 left-0" />
       <div className="overlay absolute top-0 left-0 w-full h-full bg-[#333]/90"></div>
       <div className="container relative text-white">
-        <div className="max-w-[500px] lg:ml-auto  pl-5 lg:border-l border-primary relative">
+        <div className="max-w-[500px] lg:ml-auto  lg:pl-5 lg:border-l border-primary relative mb-18">
           {/* <hr className="w-[2px] h-full bg-gradient-to-b from-primary to-transparent border-0 absolute left-0" /> */}
 
-          <h2 className="about-title text-3xl font-bold mb-3 text-white/90">How We Work with Trade Pros</h2>
+          <h2 className="about-title text-3xl font-bold mb-3 text-white/90">How We Work</h2>
           <p className="about-description  text-sm font-light max-w-[400px] text-neutral-400">
-            At True Trade Pros, we’re more than just a lead generator — we’re your contracted back office, helping skilled
-            tradespeople focus on what they do best: the work.{" "}
+            True Trade Pros is a referral and coordination platform. We do not supervise, manage, or guarantee work — instead, we
+            help facilitate clear communication and smooth project starts.
           </p>
 
           {/* <hr className="border-t border-primary my-10" /> */}
           <hr className="h-[2px] bg-gradient-to-r from-primary to-transparent border-0 my-10" />
 
-          <h3 className="text-primary mb-4">Here’s how we support our pros</h3>
+          <h3 className="text-primary mb-4">Here’s how we support our network:</h3>
           <ul className="">
             <li className="text-sm font-light flex items-center gap-3 mb-4 text-white/80">
               <span className="text-primary text-2xl">•</span>
-              Project Coordination: We handle the initial homeowner contact, schedule visits, and ensure expectations are aligned.
+              <p>
+                <strong className="font-semibold">Initial Coordination:</strong> We help homeowners and pros connect, clarify
+                project needs, and schedule introductions.
+              </p>
             </li>
             <li className="text-sm font-light flex items-center gap-3 mb-4 text-white/80">
               <span className="text-primary text-2xl">•</span>
-              Quality Control: We stay involved throughout the job, checking in with both parties to ensure craftsmanship and
-              satisfaction.
-            </li>
-            <li className="text-sm font-light flex items-center gap-3 mb-4 text-white/80">
-              <span className="text-primary text-2xl">•</span>Communication Bridge: We manage the back-and-forth so you don’t have
-              to chase updates or juggle admin tasks.
-            </li>
-            <li className="text-sm font-light flex items-center gap-3 mb-4 text-white/80">
-              <span className="text-primary text-2xl">•</span>
-              Job Completion Assurance: We only get paid when the job is done right — our commission comes from the trade pro
-              after successful completion.
+              <p>
+                <strong className="font-semibold">Communication Support:</strong> We assist with messaging and updates, but all
+                work agreements are made directly between homeowner and pro.
+              </p>
             </li>
             <li className="text-sm font-light flex items-center gap-3 mb-4 text-white/80">
               <span className="text-primary text-2xl">•</span>
-              This model keeps us aligned with both homeowners and artisans. We’re not just connecting people — we’re curating
-              quality.
+              <p>
+                <strong className="font-semibold">Independent Professionals:</strong>
+                All trade pros operate as independent contractors. We do not employ, supervise, or direct their work.
+              </p>
+            </li>
+            <li className="text-sm font-light flex items-center gap-3 mb-4 text-white/80">
+              <span className="text-primary text-2xl">•</span>
+              <p>
+                <strong className="font-semibold">Completion-Based Referral Fee:</strong>
+                We receive a referral fee from the trade pro only after a project is completed to mutual satisfaction.
+              </p>
             </li>
           </ul>
         </div>
+        <p className="italic text-sm font-light text-white/70 max-w-[500px]">
+          Note: True Trade Pros is not a licensed contractor and does not perform or oversee renovation work. All professionals
+          are independently responsible for their services, insurance, and compliance.
+        </p>
       </div>
     </section>
   );
@@ -264,7 +283,7 @@ const ReviewSection = () => {
       <p className="absolute top-0 left-0 text-[10vw] font-baskervville text-black/30 leading-[10vw]">INSPIRATION</p>
       <div className="container">
         <div className="relative review-wrapper border border-primary max-w-[1000px] mx-auto px-[40px] pt-[40px] pb-[50px] lg:pb-[80px]">
-          <h2 className="review-title text-3xl text-primary text-center mb-8 font-medium!">Pro Review</h2>
+          <h2 className="review-title text-3xl text-primary text-center mb-8 font-medium!">Pro Perspective</h2>
           <p className="review-description text-white/75 text-xs leading-[1.7] text-center max-w-[650px] mx-auto">
             “It’s great to be working with True Trade Pros — they’ve connected me with home projects like painting and tile work
             that really let me bring my skills to life. My dad was an Italian decorator, and growing up in Argentina I learned to

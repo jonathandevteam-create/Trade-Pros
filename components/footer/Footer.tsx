@@ -10,14 +10,12 @@ const Footer = () => {
     <footer className="bg-gray-50  min-h-[300px] pb-[3rem] pt-[3rem] font-sans">
       <div className="container">
         <div className="content">
-          <div className="group flex items-center gap-x-20 gap-y-10  flex-wrap">
+          <div className="group flex items-center gap-x-10 gap-y-10  flex-wrap md:justify-between">
             <div>
-              <Link href='/' className="inline-block">
-              <img src={logo} alt="" className="max-w-[50px] h-auto min-w-[60px] mb-5" />
+              <Link href="/" className="inline-block">
+                <img src={logo} alt="" className="max-w-[50px] h-auto min-w-[60px] mb-5" />
               </Link>
-              <p className="text-xs text-secondary-2 text-thin max-w-[200px] mb-8 leading-[1.5]">
-               We Find Jobs For Trade Pros
-              </p>
+              <p className="text-xs text-secondary-2 text-thin max-w-[200px] mb-8 leading-[1.5]">We Help Trade Pros Find Work</p>
               {/* <div className="social-list flex gap-3">
                 <a
                   href="#/"
@@ -42,7 +40,8 @@ const Footer = () => {
                 </a>
               </div> */}
             </div>
-            <ul className="flex flex-col gap-2 flex-1">
+            
+            <ul className="flex flex-col gap-2">
               <a href="#services" className=" text-dark font-medium  hover:text-secondary-2 duration-300">
                 Services
               </a>
@@ -53,6 +52,11 @@ const Footer = () => {
                 Contact
               </a>
             </ul>
+
+            <p className=" text-sm text-black/80 max-w-[300px]">
+              We connect skilled professionals with homeowners who value quality. Our platform is built to support independent
+              tradespeople — not to manage them.
+            </p>
 
             <ul className="">
               <li className="text-secondary-2 mb-2">Owned & operated by Thel LLC</li>
