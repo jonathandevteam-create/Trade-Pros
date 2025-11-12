@@ -50,9 +50,9 @@ const HeroSection = () => {
         <div className="hero-wrapper lg:flex lg:justify-between lg:items-center w-full relative z-10">
           <div className="hero-content max-w-[400px] mb-8 lg:mb-0">
             <h1 className="text-6xl text-primary">True Trade Pros</h1>
-            <p className="hero-description text-white text-sm font-light mb-8">
+            <p className="hero-description text-white/90  leading-[1.6] text-sm font-light mb-8 tracking-wide">
               <strong className="font-semibold">True Trade Pros</strong>{" "}
-              <span className="text-white/90">
+              <span className="">
                 connects homeowners with independent, detail-oriented professionals who bring craftsmanship back to home
                 renovation and remodel projects.
               </span>
@@ -298,7 +298,7 @@ const ReviewSection = () => {
           <div className="absolute bg-[rgb(51,51,51)] bottom-0 translate-y-[50%] translate-x-[-50%] left-[50%] px-3 text-white text-xs font-medium tracking-wide font-baskervville">
             <div className=" flex items-center justify-center">
               <Link
-                href="/dario"
+                href="/dario-distefano"
                 className="relative inline-block text-white text-[1.5em] cursor-pointer border-[2px] border-transparent px-[0.84em] py-[0.7em] tracking-[0.07em]  group"
               >
                 <span className="block transform translate-y-[0.7em] transition-transform duration-[400ms] ease-[cubic-bezier(.2,0,0,1)] delay-[400ms] group-hover:translate-y-0 group-hover:duration-[600ms]">

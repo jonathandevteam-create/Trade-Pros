@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
-const { craftmanImage, chiselImage } = localData.images;
+const { authorImage } = localData.images;
 const { screwDriverIcon, woodChiselIcon, manStandingIcon, repairManIcon } = localData.svgs;
 
 const Template = () => {
@@ -43,21 +43,26 @@ const HeroSection = () => {
   return (
     <section className="hero sm:min-h-[100vh] pt-[100px]! flex bg-[rgb(51,51,51)] relative" id="hero">
       <div className="container  flex-1 flex items-center justify-center relative">
-        <div className="hero-wrapper lg:flex lg:justify-between lg:items-center w-full relative z-10 border-y-2 border-primary py-8">
-          <div className="hero-content max-w-[400px] mb-8 lg:mb-0">
+        <div className="hero-wrapper flex flex-col lg:flex-row lg:justify-between lg:items-start   w-full relative z-10 border-y-2 border-primary py-8 gap-x-10 gap-y-15">
+          <div className="hero-content max-w-[550px] mb-8 lg:mb-0">
             <h1 className="text-6xl text-primary border-b-2 inline-block pb-10 mb-10! border-primary">Dario Di Stefano</h1>
-            <p className="hero-description text-white text-sm font-light mb-8">
-              <span className="text-white/90">
-                “It’s great to be working with True Trade Pros — they’ve connected me with home projects like painting and tile
-                work that really let me bring my skills to life. My dad was an Italian decorator, and growing up in Argentina I
-                learned to blend old-world artisan handywork ethics with modern materials and methods. This platform respects that
-                kind of craftsmanship, and that’s rare.”
-              </span>
+            <p className="hero-description text-white/90 leading-[1.6] text-sm font-light mb-8 tracking-wide">
+              Dario brings a unique artistic vision to the Asheville area, blending generations of handyman craftsmanship with
+              contemporary design. The son of an Italian decorator, Dario grew up in Argentina immersed in the traditions of
+              old-world artisan techniques. From an early age, he learned the value of meticulous workmanship and attention to
+              detail, skills he now combines with modern materials and methods to create exceptional tile and painting projects.
+              His distinctive approach has quickly earned him glowing reviews, marking him as a rising talent in the local design
+              and renovation scene.
             </p>
+            <div className="max-w-[300px]">
+              <div className="hero-image-wrapper relative w-full h-0 pt-[100%] border-2 border-primary">
+                <Image src={authorImage} fill={true} className="" alt="Dario Di Stefano" />
+              </div>
+            </div>
           </div>
 
           <div className="col lg:border-l-2 lg:border-primary lg:pl-10  w-full lg:max-w-[500px]">
-            <h2 className="text-white/40 mb-4 text-2xl font-semibold! font-poppins!">Get in touch!</h2>
+            <h2 className="text-white/40 mb-4 text-2xl font-semibold! font-poppins!">Connect with Dario!</h2>
             <form
               className=" text-left"
               id="contact-form-2 "

@@ -7,6 +7,7 @@ const images = {
   contstructionHatImage: "/assets/images/rest/estimate.webp",
   craftmanImage: "/assets/images/rest/craftman.png",
   chiselImage: "/assets/images/icons/chisel.webp",
+  authorImage: "/assets/images/rest/author.png",
 };
 
 const localData = {
