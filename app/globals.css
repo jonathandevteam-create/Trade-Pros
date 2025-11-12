@@ -53,7 +53,6 @@
   --color-dark-2: rgb(41, 41, 41);
   --color-primary-2: var(--primary-2);
   --color-primary-3: var(--primary-3);
-
 }
 
 :root {
@@ -235,3 +234,4 @@ select:-webkit-autofill {
   -webkit-text-fill-color: #fff; /* text color */
   transition: background-color 5000s ease-in-out 0s; /* prevent flash */
 }
+

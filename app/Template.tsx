@@ -6,6 +6,7 @@ import useAlert from "@/hooks/alert/useAlert";
 import { useGlobalContext } from "@/context";
 import localData from "@/localData";
 import Image from "next/image";
+import Link from "next/link";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
@@ -224,7 +225,7 @@ const HowWeWorkSection = () => {
       <Image width="4825" height="3225" src={craftmanImage} alt="" className="absolute w-full h-full object-cover top-0 left-0" />
       <div className="overlay absolute top-0 left-0 w-full h-full bg-[#333]/90"></div>
       <div className="container relative text-white">
-        <div className="max-w-[500px] lg:ml-auto  lg:pl-5 lg:border-l border-primary relative mb-18">
+        <div className="max-w-[500px] lg:ml-auto  lg:pl-5 lg:border-l-2 border-primary relative mb-18">
           {/* <hr className="w-[2px] h-full bg-gradient-to-b from-primary to-transparent border-0 absolute left-0" /> */}
 
           <h2 className="about-title text-3xl font-bold mb-3 text-white/90">How We Work</h2>
@@ -233,8 +234,8 @@ const HowWeWorkSection = () => {
             help facilitate clear communication and smooth project starts.
           </p>
 
-          {/* <hr className="border-t border-primary my-10" /> */}
-          <hr className="h-[2px] bg-gradient-to-r from-primary to-transparent border-0 my-10" />
+          <hr className="border-t-2 border-primary my-10" />
+          {/* <hr className="h-[2px] bg-gradient-to-r from-primary to-transparent border-0 my-10" /> */}
 
           <h3 className="text-primary mb-4">Here’s how we support our network:</h3>
           <ul className="">
@@ -282,17 +283,39 @@ const ReviewSection = () => {
     <section className="review bg-[rgb(51,51,51)] relative lg:pt-[10rem]!">
       <p className="absolute top-0 left-0 text-[10vw] font-baskervville text-black/30 leading-[10vw]">INSPIRATION</p>
       <div className="container">
-        <div className="relative review-wrapper border border-primary max-w-[1000px] mx-auto px-[40px] pt-[40px] pb-[50px] lg:pb-[80px]">
+        <div className="relative review-wrapper border-2 border-primary max-w-[1000px] mx-auto px-[40px] pt-[40px] pb-[50px] lg:pb-[80px]">
           <h2 className="review-title text-3xl text-primary text-center mb-8 font-medium!">Pro Perspective</h2>
           <p className="review-description text-white/75 text-xs leading-[1.7] text-center max-w-[650px] mx-auto">
             “It’s great to be working with True Trade Pros — they’ve connected me with home projects like painting and tile work
             that really let me bring my skills to life. My dad was an Italian decorator, and growing up in Argentina I learned to
             blend old-world artisan handywork ethics with modern materials and methods. This platform respects that kind of
             craftsmanship, and that’s rare.”
+            <br />
+            <br />
+            <span className="text-right block text-xs text-white/45">— Dario Di Stefano</span>
           </p>
 
           <div className="absolute bg-[rgb(51,51,51)] bottom-0 translate-y-[50%] translate-x-[-50%] left-[50%] px-3 text-white text-xs font-medium tracking-wide font-baskervville">
-            Dario Di Stefano
+            <div className=" flex items-center justify-center">
+              <Link
+                href="/dario"
+                className="relative inline-block text-white text-[1.5em] cursor-pointer border-[2px] border-transparent px-[0.84em] py-[0.7em] tracking-[0.07em]  group"
+              >
+                <span className="block transform translate-y-[0.7em] transition-transform duration-[400ms] ease-[cubic-bezier(.2,0,0,1)] delay-[400ms] group-hover:translate-y-0 group-hover:duration-[600ms]">
+                  Meet the Author
+                </span>
+
+                <span className="absolute bg-primary h-[2px] bottom-[-2px] left-[0.84em] right-[0.84em] transition-all duration-[800ms] ease-[cubic-bezier(1,0,.37,1)] delay-[200ms] origin-left group-hover:scale-x-0 group-hover:left-[-3px] group-hover:right-[-2px] group-hover:origin-right group-hover:duration-[200ms]" />
+
+                <span className="absolute bg-primary w-[2px] top-[-2px] bottom-[-2px] right-[-2px] transform scale-y-0 origin-top transition-transform duration-[100ms] ease-[cubic-bezier(1,0,.65,1.01)] delay-[230ms] group-hover:scale-y-100 group-hover:origin-bottom group-hover:delay-[200ms]" />
+
+                <span className="absolute bg-primary h-[2px] left-[-3px] right-[-2px] top-[-2px] transform scale-x-0 origin-left transition-transform duration-[80ms] linear delay-[430ms] group-hover:scale-x-100 group-hover:origin-right group-hover:delay-[400ms]" />
+
+                <span className="absolute bg-primary w-[2px] top-[-2px] bottom-[-2px] left-[-3px] transform scale-y-0 origin-bottom transition-transform duration-[80ms] linear delay-[510ms] group-hover:scale-y-100 group-hover:origin-top group-hover:delay-[480ms]" />
+
+                <span className="absolute bg-primary h-[2px] left-[-3px] right-[-2px] bottom-[-2px] transform scale-x-0 origin-right transition-transform duration-[300ms] ease-[cubic-bezier(1,0,.65,1.01)] group-hover:scale-x-100 group-hover:origin-left group-hover:duration-[500ms] group-hover:delay-[560ms]" />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

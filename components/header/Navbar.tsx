@@ -11,8 +11,8 @@ const { logo } = localData.images;
 
 export const navLinks = [
   { title: "Home", href: "/" },
-  { title: "Services", href: "#services" },
-  { title: "Process", href: "#process" },
+  { title: "Services", href: "/#services" },
+  { title: "Process", href: "/#process" },
 ];
 
 
