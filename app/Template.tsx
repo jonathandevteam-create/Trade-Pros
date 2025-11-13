@@ -44,7 +44,7 @@ const HeroSection = () => {
   const { sendEmail } = useGlobalContext();
 
   return (
-    <section className="hero sm:min-h-[100vh] pt-[100px]! flex bg-[rgb(51,51,51)] relative" id="hero">
+    <section className="hero sm:min-h-[100vh] pt-[100px]! flex bg-[rgb(51,51,51)] relative" id="contact">
       <div className="container  flex-1 flex items-center justify-center relative">
         <FrameQuadrates />
         <div className="hero-wrapper lg:flex lg:justify-between lg:items-center w-full relative z-10">
@@ -302,7 +302,7 @@ const ReviewSection = () => {
                 className="relative inline-block text-white text-[1.5em] cursor-pointer border-[2px] border-transparent px-[0.84em] py-[0.7em] tracking-[0.07em]  group"
               >
                 <span className="block transform translate-y-[0.7em] transition-transform duration-[400ms] ease-[cubic-bezier(.2,0,0,1)] delay-[400ms] group-hover:translate-y-0 group-hover:duration-[600ms]">
-                  Meet the Author
+                  Meet Dario
                 </span>
 
                 <span className="absolute bg-primary h-[2px] bottom-[-2px] left-[0.84em] right-[0.84em] transition-all duration-[800ms] ease-[cubic-bezier(1,0,.37,1)] delay-[200ms] origin-left group-hover:scale-x-0 group-hover:left-[-3px] group-hover:right-[-2px] group-hover:origin-right group-hover:duration-[200ms]" />

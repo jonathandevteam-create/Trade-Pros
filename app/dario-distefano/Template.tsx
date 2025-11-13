@@ -42,7 +42,7 @@ const HeroSection = () => {
   const { sendEmail } = useGlobalContext();
 
   return (
-    <section className="hero sm:min-h-[100vh] pt-[100px]! flex bg-[rgb(51,51,51)] relative" id="hero">
+    <section className="hero sm:min-h-[100vh] pt-[100px]! flex bg-[rgb(51,51,51)] relative" id="contact">
       <div className="container  flex-1 flex items-center justify-center relative">
         <div className="hero-wrapper flex flex-col lg:flex-row lg:justify-between lg:items-start   w-full relative z-10 border-y-2 border-primary py-8 gap-x-10 gap-y-15">
           <div className="hero-content max-w-[550px] mb-8 lg:mb-0">
@@ -171,25 +171,20 @@ const ShowcaseSection = () => {
   return (
     <section className="showcase ">
       <div className="container">
-        <div className="showcase-wrapper grid gap-x-5 gap-y-5 md:grid-cols-2">
-          <div className="col border-1 border-primary/30  py-7 px-5">
-            <p className="text-sm text-primary mb-10">
-              <strong>Van Conversion / Camper Van Conversion: </strong>
-              Turning a standard van into a livable or functional space, often including beds, tables, seating, and storage.
-            </p>
+        <h2 className="text-2xl sm:text-4xl text-primary mb-4 border-primary  text-center">Kitchen & Bathroom Remodels</h2>
+        <p className="text-sm   max-w-[700px] mb-10 text-center mx-auto">
+          Redesigning and upgrading spaces with custom layouts, cabinetry, fixtures, and finishes to enhance functionality,
+          comfort, and style.
+        </p>
 
+        <div className="showcase-wrapper grid gap-x-5 gap-y-5 md:grid-cols-2 mb-[1rem]">
+          <div className="col border-1 border-primary/30  py-7 px-5">
             <div className="showcase-image-wrapper relative w-full h-0 pt-[56.25%]">
               <Image fill src={van1Image} alt="van design" />
             </div>
           </div>
 
           <div className="col border-1 border-primary/30  py-7 px-5">
-            <p className="text-sm text-primary mb-10">
-              <strong>Custom Van Interiors: </strong>
-              More general term for adding built-in furniture, cabinets, or workspaces inside a van—could be for work vans or
-              recreational vans.{" "}
-            </p>
-
             <div className="showcase-image-wrapper relative w-full h-0 pt-[56.25%]">
               <Image fill src={van2Image} alt="van design" />
             </div>
@@ -206,24 +201,6 @@ const HomeSolutionsSection = () => {
       <div className="container">
         <div className="home-solutions-wrapper grid gap-4 lg:grid-cols-[1.2fr_1fr]">
           <div className="col">
-            <div className="row mb-10">
-              <h4 className="text-primary mb-4">Ring Doorbell Installation</h4>
-              <ul>
-                <li className="text-sm font-light flex items-center gap-3 mb-0">
-                  <span className="text-primary text-2xl">•</span>
-                  Battery-powered or existing-wired models
-                </li>
-                <li className="text-sm font-light flex items-center gap-3 mb-0">
-                  <span className="text-primary text-2xl">•</span>
-                  Mounting and setup for optimal video coverage
-                </li>
-                <li className="text-sm font-light flex items-center gap-3 mb-0">
-                  <span className="text-primary text-2xl">•</span>
-                  Integration with your smartphone or smart home system
-                </li>
-              </ul>
-            </div>
-
             <div className="row mb-10">
               <h4 className="text-primary mb-4">Ring Camera Installation</h4>
               <ul>
@@ -261,12 +238,17 @@ const HomeSolutionsSection = () => {
             </div>
           </div>
 
-          <div className="col relative pt-[80%]">
-            <div className="home-solutions-image absolute top-0 w-[60%] right-0 h-0 pt-[60%] border-2 border-primary">
-              <Image src={doorImage} fill={true} className="m-3" alt="home solutions" />
+          <div className="col relative sm:pt-[80%] sm:h-0">
+            <div className="home-solutions-image relative sm:absolute sm:top-0 sm:w-[60%] sm:right-0 sm:h-0 pt-[100%] sm:pt-[60%] sm:border-2 border-primary mb-[2rem] sm:mb-0">
+              <Image src={doorImage} fill={true} className="sm:m-3 object-cover" alt="home solutions" />
             </div>
-            <div className="home-solutions-image absolute bottom-0 w-[50%] h-0 pt-[50%] border-2 border-primary">
-              <Image src={coupeImage} fill={true} className="m-3" alt="home solutions" />
+            <div className="home-solutions-image relative sm:absolute sm:bottom-0 sm:w-[50%] sm:h-0 pt-[70%] sm:pt-[50%] sm:border-2 border-primary">
+              <Image src={coupeImage} fill={true} className="sm:m-3 object-cover" alt="home solutions" />
+              <p className="text-xs italic mt-10 text-white bg-primary/80 p-3 mx-3 sm:-left-8 max-w-[500px] absolute z-3 bottom-5">
+                <strong>Van Conversion & Design: </strong>
+                Transforming a standard van into a functional or livable space with custom interiors—adding beds, seating,
+                storage, and built-in furniture for work or recreation.
+              </p>
             </div>
           </div>
         </div>

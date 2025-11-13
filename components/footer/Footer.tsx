@@ -42,15 +42,15 @@ const Footer = () => {
             </div>
             
             <ul className="flex flex-col gap-2">
-              <a href="#services" className=" text-dark font-medium  hover:text-secondary-2 duration-300">
+              <Link href="/#services" className=" text-dark font-medium  hover:text-secondary-2 duration-300">
                 Services
-              </a>
-              <a href="#process" className=" text-dark font-medium  hover:text-secondary-2 duration-300">
+              </Link>
+              <Link href="/#process" className=" text-dark font-medium  hover:text-secondary-2 duration-300">
                 Process
-              </a>
-              <a href="#hero" className=" text-dark font-medium  hover:text-secondary-2 duration-300">
+              </Link>
+              <Link href="/#contact" className=" text-dark font-medium  hover:text-secondary-2 duration-300">
                 Contact
-              </a>
+              </Link>
             </ul>
 
             <p className=" text-sm text-black/80 max-w-[300px]">

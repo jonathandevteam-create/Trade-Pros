@@ -42,7 +42,7 @@ export function TextareaDemo({
         id={id}
         {...props}
         onChange={onChange}
-        className={`${textareaClassName}`}
+        className={`${textareaClassName} max-h-[300px]`}
       />
       {/* <div className="valid-feedback text-green-600 text-sm">{successMessage}</div> */}
       {/* <div className="invalid-feedback text-red-600 text-sm">{errorMessage}</div> */}
