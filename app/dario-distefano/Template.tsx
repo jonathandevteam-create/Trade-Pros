@@ -9,14 +9,15 @@ import Image from "next/image";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
-const { authorImage } = localData.images;
+const { authorImage, van1Image, van2Image, coupeImage, doorImage } = localData.images;
 const { screwDriverIcon, woodChiselIcon, manStandingIcon, repairManIcon } = localData.svgs;
 
 const Template = () => {
   return (
     <main className="home-page">
       <HeroSection />
-      {/* <ReviewSection /> */}
+      <ShowcaseSection />
+      <HomeSolutionsSection />
     </main>
   );
 };
@@ -166,11 +167,109 @@ const HeroSection = () => {
   );
 };
 
-const ReviewSection = () => {
+const ShowcaseSection = () => {
   return (
-    <section className="review bg-[rgb(51,51,51)] relative lg:pt-[10rem]!">
+    <section className="showcase ">
       <div className="container">
-        <h2 className="review-title text-3xl text-primary text-center mb-8 font-medium!">Pro Perspective</h2>
+        <div className="showcase-wrapper grid gap-x-5 gap-y-5 md:grid-cols-2">
+          <div className="col border-1 border-primary/30  py-7 px-5">
+            <p className="text-sm text-primary mb-10">
+              <strong>Van Conversion / Camper Van Conversion: </strong>
+              Turning a standard van into a livable or functional space, often including beds, tables, seating, and storage.
+            </p>
+
+            <div className="showcase-image-wrapper relative w-full h-0 pt-[56.25%]">
+              <Image fill src={van1Image} alt="van design" />
+            </div>
+          </div>
+
+          <div className="col border-1 border-primary/30  py-7 px-5">
+            <p className="text-sm text-primary mb-10">
+              <strong>Custom Van Interiors: </strong>
+              More general term for adding built-in furniture, cabinets, or workspaces inside a van—could be for work vans or
+              recreational vans.{" "}
+            </p>
+
+            <div className="showcase-image-wrapper relative w-full h-0 pt-[56.25%]">
+              <Image fill src={van2Image} alt="van design" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const HomeSolutionsSection = () => {
+  return (
+    <section className="home-solutions bg-primary/3">
+      <div className="container">
+        <div className="home-solutions-wrapper grid gap-4 lg:grid-cols-[1.2fr_1fr]">
+          <div className="col">
+            <div className="row mb-10">
+              <h4 className="text-primary mb-4">Ring Doorbell Installation</h4>
+              <ul>
+                <li className="text-sm font-light flex items-center gap-3 mb-0">
+                  <span className="text-primary text-2xl">•</span>
+                  Battery-powered or existing-wired models
+                </li>
+                <li className="text-sm font-light flex items-center gap-3 mb-0">
+                  <span className="text-primary text-2xl">•</span>
+                  Mounting and setup for optimal video coverage
+                </li>
+                <li className="text-sm font-light flex items-center gap-3 mb-0">
+                  <span className="text-primary text-2xl">•</span>
+                  Integration with your smartphone or smart home system
+                </li>
+              </ul>
+            </div>
+
+            <div className="row mb-10">
+              <h4 className="text-primary mb-4">Ring Camera Installation</h4>
+              <ul>
+                <li className="text-sm font-light flex items-center gap-3 mb-0">
+                  <span className="text-primary text-2xl">•</span>
+                  Indoor and outdoor cameras
+                </li>
+                <li className="text-sm font-light flex items-center gap-3 mb-0">
+                  <span className="text-primary text-2xl">•</span>
+                  Proper positioning for maximum security
+                </li>
+                <li className="text-sm font-light flex items-center gap-3 mb-0">
+                  <span className="text-primary text-2xl">•</span>
+                  Wi-Fi setup and app configuration
+                </li>
+              </ul>
+            </div>
+
+            <div className="row mb-10">
+              <h4 className="text-primary mb-4">Keypad & Smart Lock Installation</h4>
+              <ul>
+                <li className="text-sm font-light flex items-center gap-3 mb-0">
+                  <span className="text-primary text-2xl">•</span>
+                  Door keypads and smart locks
+                </li>
+                <li className="text-sm font-light flex items-center gap-3 mb-0">
+                  <span className="text-primary text-2xl">•</span>
+                  Secure mounting and programming
+                </li>
+                <li className="text-sm font-light flex items-center gap-3 mb-0">
+                  <span className="text-primary text-2xl">•</span>
+                  Integration with your Ring or home automation system
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="col relative pt-[80%]">
+            <div className="home-solutions-image absolute top-0 w-[60%] right-0 h-0 pt-[60%] border-2 border-primary">
+              <Image src={doorImage} fill={true} className="m-3" alt="home solutions" />
+            </div>
+            <div className="home-solutions-image absolute bottom-0 w-[50%] h-0 pt-[50%] border-2 border-primary">
+              <Image src={coupeImage} fill={true} className="m-3" alt="home solutions" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

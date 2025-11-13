@@ -8,6 +8,10 @@ const images = {
   craftmanImage: "/assets/images/rest/craftman.png",
   chiselImage: "/assets/images/icons/chisel.webp",
   authorImage: "/assets/images/rest/author.png",
+  van1Image: "/assets/images/rest/van-1.jpg",
+  van2Image: "/assets/images/rest/van-2.jpg",
+  coupeImage: "/assets/images/rest/coupe.jpg",
+  doorImage: "/assets/images/rest/door.jpg",
 };
 
 const localData = {
