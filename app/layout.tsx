@@ -26,7 +26,7 @@ const baskervville = Baskervville({
   subsets: ["latin"],
   weight: ["400", "700"], // Regular & Bold
 });
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://truetradepros.com/";
 
 export const metadata: Metadata = {
   title: "We Find Jobs For Trade Pros",
