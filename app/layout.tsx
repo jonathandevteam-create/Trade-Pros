@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       "True Trade Pros connects home owners with verified, detail-oriented professionals who bring craftsmanship back to home renovation and remodel projects. ",
     url: `${siteUrl}`,
     siteName: "Trade Pros",
-    images: [`${siteUrl}/assets/images/rest/craftman.png`], //recomened sizes 1200x630, 1080 × 566, 600 × 315 | aspect ratio 1.91:1
+    images: [`${siteUrl}/assets/images/logo.webp`], //recomened sizes 1200x630, 1080 × 566, 600 × 315 | aspect ratio 1.91:1
     locale: "en_US",
     type: "website",
   },
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "We Find Jobs For Trade Pros",
     description:
       "True Trade Pros connects home owners with verified, detail-oriented professionals who bring craftsmanship back to home renovation and remodel projects. ",
-    images: [`${siteUrl}/assets/images/rest/craftman.png`], //recomened sizes 1200x630, 1080 × 566, 600 × 315 | aspect ratio 1.91:1
+    images: [`${siteUrl}/assets/images/logo.webp`], //recomened sizes 1200x630, 1080 × 566, 600 × 315 | aspect ratio 1.91:1
   },
 };
 
